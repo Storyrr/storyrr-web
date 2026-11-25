@@ -2,13 +2,14 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 
-const base = "/storyrr-web";
+const base = "/";
 
 // https://astro.build/config
 export default defineConfig({
-  // GitHub Pages project site: https://storyrr.github.io/storyrr-web/. With a custom
-  // domain, set `site` to it, `base` to "/" and add its name in public/CNAME. Links
-  // between pages are written from the root; src/middleware.ts adds the base.
+  // The organization's GitHub Pages site (this repository is named storyrr.github.io),
+  // served at the root. With a custom domain, set `site` to it and add its name in
+  // public/CNAME; to serve under a sub-path, set `base`: src/middleware.ts adds it to
+  // the links between pages, which are written from the root.
   site: "https://storyrr.github.io",
   base,
   integrations: [
@@ -27,13 +28,13 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://storyrr.github.io/storyrr-web/og-image.png",
+            content: "https://storyrr.github.io/og-image.png",
           },
         },
         { tag: "meta", attrs: { name: "twitter:card", content: "summary_large_image" } },
       ],
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/Storyrr/storyrr" }],
-      editLink: { baseUrl: "https://github.com/Storyrr/storyrr-web/edit/main/" },
+      editLink: { baseUrl: "https://github.com/Storyrr/storyrr.github.io/edit/main/" },
       customCss: [
         "@fontsource-variable/geist",
         "@fontsource-variable/space-grotesk",

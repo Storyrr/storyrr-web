@@ -1,12 +1,12 @@
 // @ts-check
 /**
- * The site may be served under a base path (/storyrr-web/ on GitHub Pages), which Astro
+ * The site may be served under a base path (Astro's `base`), which Astro
  * doesn't add to links written in Markdown. Pages link to each other from the root
  * ("/services/chaptarr/"); src/middleware.ts adds the base to every page's links.
  */
 
 /**
- * @param {string} base Astro's `base` ("/storyrr-web", or "/" without one).
+ * @param {string} base Astro's `base` ("/docs", or "/" without one).
  * @param {string} href
  */
 export function withBase(base, href) {

@@ -1,6 +1,6 @@
-# storyrr-web
+# storyrr.github.io
 
-The website and documentation of [Storyrr](https://github.com/Storyrr/storyrr), published at <https://storyrr.github.io/storyrr-web/>.
+The website and documentation of [Storyrr](https://github.com/Storyrr/storyrr), published at <https://storyrr.github.io>.
 
 Built with [Astro](https://astro.build/) and [Starlight](https://starlight.astro.build/).
 
@@ -23,4 +23,4 @@ Pages are Markdown files in `src/content/docs/`; the sidebar is set in `astro.co
 
 Every push to `main` builds the site and publishes it on GitHub Pages (`.github/workflows/deploy.yml`). In the repository settings, **Pages → Source** must be **GitHub Actions**.
 
-To move to a custom domain: set `site` to it in `astro.config.mjs`, remove `base`, add the domain in `public/CNAME` and in **Pages → Custom domain**.
+To move to a custom domain: set `site` to it in `astro.config.mjs`, add the domain in `public/CNAME` and in **Pages → Custom domain**.
