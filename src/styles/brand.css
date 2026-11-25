@@ -43,7 +43,9 @@ h3,
   font-family: var(--sl-font-heading);
 }
 
-/* The amber buttons read better with ink text. */
+/* The primary button in the brand's amber with ink text, in both themes. */
 .sl-link-button.primary {
+  background-color: #f5b800;
+  border-color: #f5b800;
   color: #17140f;
 }
