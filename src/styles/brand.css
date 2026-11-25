@@ -1,0 +1,49 @@
+/*
+ * Storyrr's palette, from the logo (amber #F5B800, warm ink #17140F, cream #FFF7E0),
+ * mapped onto Starlight's color variables. Dark is the default theme, like the app.
+ */
+:root {
+  --sl-font: "Geist Variable", system-ui, sans-serif;
+  --sl-font-heading: "Space Grotesk Variable", var(--sl-font);
+
+  --sl-color-accent-low: #3d2f05;
+  --sl-color-accent: #f5b800;
+  --sl-color-accent-high: #ffe08a;
+
+  --sl-color-white: #fff7e0;
+  --sl-color-gray-1: #f1e9d4;
+  --sl-color-gray-2: #cfc6b0;
+  --sl-color-gray-3: #a09782;
+  --sl-color-gray-4: #6b6352;
+  --sl-color-gray-5: #3f392d;
+  --sl-color-gray-6: #26211a;
+  --sl-color-black: #17140f;
+}
+
+:root[data-theme="light"] {
+  --sl-color-accent-low: #fdecb4;
+  --sl-color-accent: #8a6500;
+  --sl-color-accent-high: #4a3600;
+
+  --sl-color-white: #17140f;
+  --sl-color-gray-1: #26211a;
+  --sl-color-gray-2: #3f392d;
+  --sl-color-gray-3: #6b6352;
+  --sl-color-gray-4: #a09782;
+  --sl-color-gray-5: #d9d0ba;
+  --sl-color-gray-6: #f4ecd6;
+  --sl-color-gray-7: #faf4e4;
+  --sl-color-black: #fffbf0;
+}
+
+h1,
+h2,
+h3,
+.hero h1 {
+  font-family: var(--sl-font-heading);
+}
+
+/* The amber buttons read better with ink text. */
+.sl-link-button.primary {
+  color: #17140f;
+}

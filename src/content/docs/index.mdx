@@ -1,0 +1,74 @@
+---
+title: Storyrr
+description: A self-hosted request manager for audiobooks and eBooks, manga and comics, in the spirit of Seerr.
+template: splash
+hero:
+  title: Book requests for your homelab
+  tagline: Your users search and request audiobooks, eBooks, manga and comics. You approve, Storyrr hands each one to Chaptarr in the right folder, and tells them when it's ready to read.
+  image:
+    dark: ../../assets/logo-mark-dark.svg
+    light: ../../assets/logo-mark.svg
+    alt: ""
+  actions:
+    - text: Get started
+      link: getting-started/introduction/
+      icon: right-arrow
+    - text: View on GitHub
+      link: https://github.com/Storyrr/storyrr
+      icon: github
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard, Steps } from "@astrojs/starlight/components";
+
+Movies and TV have Seerr. Storyrr is the same idea for the book side of a homelab: one place where the people you invite find a book, request it, and follow it until it shows up in their reader.
+
+## What it does
+
+<CardGrid stagger>
+  <Card title="Search and discover" icon="magnifier">
+    Audiobooks from Audible's catalog; books, manga and comics from Hardcover. Series, authors,
+    genres, readers' ratings, and a Discover page you arrange yourself.
+  </Card>
+  <Card title="Requests with approval" icon="approve-check">
+    Per-user permissions and request limits, auto-approval, a blocklist, and the target Chaptarr
+    folder chosen per request: Books, Manga or Comics.
+  </Card>
+  <Card title="Knows what you have" icon="open-book">
+    Checks your Audiobookshelf, Kavita, Komga and Jellyfin libraries and Chaptarr's imports, so
+    titles you own show as available. Users report a wrong edition or language as an issue.
+  </Card>
+  <Card title="Sign in with your media server" icon="seti:lock">
+    Invite-only accounts, or sign in with Audiobookshelf, Kavita, Komga or Jellyfin, and import
+    their users in a click.
+  </Card>
+  <Card title="Notifications" icon="comment">
+    Email, Discord, Slack, Telegram, ntfy, Gotify, Pushover, Pushbullet, webhooks and Web Push,
+    shared or personal, in each user's language.
+  </Card>
+  <Card title="Made to be shared" icon="laptop">
+    English, French, German and Spanish. Installable as an app on phones. Works on your local
+    network and through a tunnel at the same time.
+  </Card>
+</CardGrid>
+
+## How it fits in
+
+<Steps>
+
+1. **A user requests a title.** They find it in Storyrr, with its status: available, requested, or a Request button.
+2. **You approve it** (or it's approved automatically), choosing the Chaptarr folder and quality profile if you want.
+3. **Chaptarr fetches it**, monitoring only the requested book in the requested format.
+4. **Storyrr sees it arrive**, through Chaptarr's webhook and your media servers, and notifies the user that it's available.
+
+</Steps>
+
+:::caution[Pre-release]
+The v1 features work, but expect changes until 1.0.
+:::
+
+<LinkCard
+  title="Install Storyrr"
+  description="One Docker container, no configuration file: up and running in a few minutes."
+  href="getting-started/installation/"
+/>
