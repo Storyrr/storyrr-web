@@ -26,7 +26,7 @@ Besides the **Administrator** role, which can do everything, each user has a lis
 | Report issues                    | Report problems on titles they have.                                                     |
 | Manage blocklist                 | Block and unblock titles.                                                                |
 
-Users without their own list get the **default permissions** from **Settings → Users** (out of the box: request both formats and report issues).
+Users without their own list get the **default permissions** from **Settings → Users** (out of the box: view everyone's requests, request both formats and report issues).
 
 User managers who aren't administrators can only grant permissions they hold themselves, and can't change accounts that hold a permission they lack.
 
