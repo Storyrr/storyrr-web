@@ -3,7 +3,7 @@ title: Reverse proxy and tunnels
 description: Reach Storyrr on your local network and through a tunnel or reverse proxy at the same time.
 ---
 
-Like Seerr, Storyrr works at **every address it's reached at**: its local network address over http (`http://192.168.1.10:3000`) and a public HTTPS address (a Cloudflare Tunnel, a reverse proxy) at the same time. Nothing to configure for that.
+Like Seerr, Storyrr works at **every address it's reached at**: its local network address over http (`http://192.168.1.10:6066`) and a public HTTPS address (a Cloudflare Tunnel, a reverse proxy) at the same time. Nothing to configure for that.
 
 The **application URL** (setup wizard, or Settings → General) is only used for links that leave Storyrr: emails, notifications, the Chaptarr webhook URL and link previews. Set it to the address your users open, usually the public one.
 
@@ -18,7 +18,7 @@ Sign-in and other changes check that the request comes from the page's own addre
 
 ### Cloudflare Tunnel
 
-Point the tunnel's public hostname at Storyrr's local address (for example `http://storyrr:3000`). Cloudflare sends the right headers: nothing else to do.
+Point the tunnel's public hostname at Storyrr's local address (for example `http://storyrr:6066`). Cloudflare sends the right headers: nothing else to do.
 
 ### Caddy
 
@@ -26,7 +26,7 @@ Caddy passes the headers by default:
 
 ```txt title="Caddyfile"
 books.example.com {
-  reverse_proxy storyrr:3000
+  reverse_proxy storyrr:6066
 }
 ```
 
@@ -38,7 +38,7 @@ server {
   # listen and TLS settings…
 
   location / {
-    proxy_pass http://storyrr:3000;
+    proxy_pass http://storyrr:6066;
     proxy_set_header Host $host;
     proxy_set_header X-Forwarded-Proto $scheme;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;

@@ -13,7 +13,7 @@ services:
     image: ghcr.io/storyrr/storyrr:latest
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "6066:6066"
     volumes:
       - ./data:/data
 ```
@@ -25,7 +25,7 @@ mkdir data && sudo chown 1000:1000 data
 docker compose up -d
 ```
 
-Then open `http://<server-ip>:3000`. The first visit runs the [setup wizard](/getting-started/first-setup/).
+Then open `http://<server-ip>:6066`. The first visit runs the [setup wizard](/getting-started/first-setup/).
 
 :::tip[Same network as your other services]
 Put Storyrr on the same Docker network as Chaptarr and your media servers: it can then reach them by container name and **internal** port (for example `http://audiobookshelf:80`), whatever ports you publish on the host.

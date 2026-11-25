@@ -10,7 +10,7 @@ Storyrr needs **no** environment variable: the defaults below suit the Docker im
 | `BETTER_AUTH_URL`    |                    | The application URL. Overrides the one set in Settings → General, which then becomes read-only.                           |
 | `BETTER_AUTH_SECRET` | generated          | At least 32 random characters. Signs sessions and encrypts stored service keys. Generated in `/data/auth-secret` if unset. |
 | `DATABASE_URL`       | `/data/storyrr.db` | The SQLite database file.                                                                                                 |
-| `PORT`               | `3000`             | The HTTP port inside the container.                                                                                       |
+| `PORT`               | `6066`             | The HTTP port inside the container.                                                                                       |
 
 Variables are checked at startup: an invalid value stops Storyrr with a message saying which one.
 
