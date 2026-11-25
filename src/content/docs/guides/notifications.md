@@ -9,18 +9,18 @@ Storyrr notifies about requests (waiting for approval, auto-approved, approved, 
 
 **Settings → Notifications** has one tab per agent, each with **Enable**, the events to send, its settings, **Test** and **Save**:
 
-| Agent        | Sends to                                                             |
-| ------------ | -------------------------------------------------------------------- |
-| Email        | Each user's address, through your SMTP server.                       |
-| Discord      | A channel webhook.                                                    |
-| Slack        | A channel webhook.                                                    |
-| Telegram     | A chat, through your bot.                                             |
-| ntfy         | A topic.                                                              |
-| Gotify       | Your Gotify server.                                                   |
-| Pushover     | Your Pushover user or group.                                          |
-| Pushbullet   | Your Pushbullet account or channel.                                   |
-| Webhook      | Any URL, with a JSON body you write using `{{variables}}`.            |
-| Web Push     | Users' browsers and phones, once they turn it on.                    |
+| Agent      | Sends to                                                   |
+| ---------- | ---------------------------------------------------------- |
+| Email      | Each user's address, through your SMTP server.             |
+| Discord    | A channel webhook.                                         |
+| Slack      | A channel webhook.                                         |
+| Telegram   | A chat, through your bot.                                  |
+| ntfy       | A topic.                                                   |
+| Gotify     | Your Gotify server.                                        |
+| Pushover   | Your Pushover user or group.                               |
+| Pushbullet | Your Pushbullet account or channel.                        |
+| Webhook    | Any URL, with a JSON body you write using `{{variables}}`. |
+| Web Push   | Users' browsers and phones, once they turn it on.          |
 
 Shared messages use the notification language set at the top of the page.
 

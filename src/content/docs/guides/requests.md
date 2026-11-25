@@ -13,15 +13,15 @@ If someone already requested the same title, requesting it again joins their req
 
 ## Statuses
 
-| Status        | Meaning                                                                    |
-| ------------- | -------------------------------------------------------------------------- |
-| **Pending**   | Waiting for an administrator's approval.                                   |
-| **Approved**  | Approved, about to be sent to Chaptarr.                                    |
-| **Sent to Chaptarr** | Chaptarr has it and is searching for it (then downloading it).      |
-| **Available** | Imported by Chaptarr or found in a media server's library.                 |
-| **Denied**    | Denied, with the administrator's reason if they gave one.                  |
-| **Cancelled** | Deleted while pending.                                                     |
-| **Failed**    | Chaptarr refused it; the reason is shown. Request managers can **Retry**.  |
+| Status               | Meaning                                                                   |
+| -------------------- | ------------------------------------------------------------------------- |
+| **Pending**          | Waiting for an administrator's approval.                                  |
+| **Approved**         | Approved, about to be sent to Chaptarr.                                   |
+| **Sent to Chaptarr** | Chaptarr has it and is searching for it (then downloading it).            |
+| **Available**        | Imported by Chaptarr or found in a media server's library.                |
+| **Denied**           | Denied, with the administrator's reason if they gave one.                 |
+| **Cancelled**        | Deleted while pending.                                                    |
+| **Failed**           | Chaptarr refused it; the reason is shown. Request managers can **Retry**. |
 
 Each request keeps its history: who changed it, when, and why.
 

@@ -6,6 +6,7 @@ The website (landing page) and user documentation of **Storyrr**, a self-hosted 
 
 - **Astro** + **Starlight** (docs theme, built-in search with Pagefind), static output.
 - **Bun** as package manager and script runner; Astro runs on Node.
+- **oxfmt** (format) and **oxlint** (type-aware lint, via `oxlint-tsgolint`), pinned to exact versions like the app.
 - Fonts from Fontsource: Geist (text), Space Grotesk (headings), like the app.
 - Deployed by `.github/workflows/deploy.yml` (`withastro/action` → `actions/deploy-pages`).
 
@@ -27,6 +28,7 @@ Colors from the logo (amber `#F5B800`, warm ink `#17140F`, cream `#FFF7E0`), map
 
 ## Checks and commits
 
-- `bun run build` must pass on every commit (it fails on broken front matter and invalid content).
+- `bun run check` (Astro types, `oxfmt --check`, `oxlint --deny-warnings` with type checking) and `bun run build` (fails on broken front matter and invalid content) must pass on every commit; CI runs both before deploying. Format with `bun run format`, never by hand. Same tools and pinned versions as the app (`.oxfmtrc.json`, `.oxlintrc.json`): fix the code rather than disabling a rule, and comment any disabled rule.
+- Editor: Zed (`.zed/settings.json`, copied from the app): oxfmt formats on save, oxlint lints as you type.
 - [Conventional Commits](https://www.conventionalcommits.org/) in English, imperative and lowercase: `docs(services): explain the Kavita auth key`, `feat(site): add a screenshots section`, `ops: bump the deploy actions`. Scopes: `site` (landing page, layout, styles), `docs` pages by section (`getting-started`, `configuration`, `services`, `guides`), `deps`.
 - One logical change per commit.

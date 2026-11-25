@@ -33,18 +33,18 @@ Put Storyrr on the same Docker network as Chaptarr and your media servers: it ca
 
 ## Image tags
 
-| Tag      | Follows                               |
-| -------- | ------------------------------------- |
-| `latest` | The latest release.                   |
-| `X.Y`    | The latest patch of a minor version.  |
-| `X.Y.Z`  | One exact release.                    |
+| Tag      | Follows                              |
+| -------- | ------------------------------------ |
+| `latest` | The latest release.                  |
+| `X.Y`    | The latest patch of a minor version. |
+| `X.Y.Z`  | One exact release.                   |
 
 ## What's in `/data`
 
-| File          | What it is                                                                       |
-| ------------- | -------------------------------------------------------------------------------- |
+| File          | What it is                                                                            |
+| ------------- | ------------------------------------------------------------------------------------- |
 | `storyrr.db`  | The SQLite database: accounts, requests, settings. Migrated automatically at startup. |
-| `auth-secret` | Generated on first start. Signs sessions and encrypts the service keys you save. |
+| `auth-secret` | Generated on first start. Signs sessions and encrypts the service keys you save.      |
 
 Keep both together: see [Backups and updates](/configuration/backups-and-updates/).
 

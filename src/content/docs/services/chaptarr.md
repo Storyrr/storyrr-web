@@ -22,7 +22,7 @@ Administrators (and users with the Advanced requests permission) can pick anothe
 
 ### Languages
 
-The default **metadata profile**'s languages are the languages Storyrr accepts for that format. Titles in another language are marked *Not in a language Chaptarr accepts* and can't be requested; when Hardcover knows a version in an accepted language, Storyrr links to it. If a book you know exists in your language isn't on Hardcover yet, the title page links to Hardcover to add that edition.
+The default **metadata profile**'s languages are the languages Storyrr accepts for that format. Titles in another language are marked _Not in a language Chaptarr accepts_ and can't be requested; when Hardcover knows a version in an accepted language, Storyrr links to it. If a book you know exists in your language isn't on Hardcover yet, the title page links to Hardcover to add that edition.
 
 ## Webhook
 

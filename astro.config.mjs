@@ -23,7 +23,13 @@ export default defineConfig({
       },
       favicon: "/favicon.svg",
       head: [
-        { tag: "meta", attrs: { property: "og:image", content: "https://storyrr.github.io/storyrr-web/og-image.png" } },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content: "https://storyrr.github.io/storyrr-web/og-image.png",
+          },
+        },
         { tag: "meta", attrs: { name: "twitter:card", content: "summary_large_image" } },
       ],
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/Storyrr/storyrr" }],
@@ -71,7 +77,11 @@ export default defineConfig({
             "guides/discover",
           ],
         },
-        { label: "Contributing", link: "https://github.com/Storyrr/storyrr/blob/main/CONTRIBUTING.md", attrs: { target: "_blank" } },
+        {
+          label: "Contributing",
+          link: "https://github.com/Storyrr/storyrr/blob/main/CONTRIBUTING.md",
+          attrs: { target: "_blank" },
+        },
       ],
     }),
   ],

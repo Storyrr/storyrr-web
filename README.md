@@ -13,6 +13,8 @@ bun install
 bun run dev      # http://localhost:4321
 bun run build    # static site in dist/
 bun run preview  # serve dist/
+bun run check    # format check (oxfmt) and type-aware lint (oxlint); CI runs it
+bun run format   # format with oxfmt
 ```
 
 Pages are Markdown files in `src/content/docs/`; the sidebar is set in `astro.config.mjs`.

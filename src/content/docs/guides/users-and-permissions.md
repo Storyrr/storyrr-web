@@ -13,18 +13,18 @@ The account created by the setup wizard is the **Owner**: an administrator that 
 
 Besides the **Administrator** role, which can do everything, each user has a list of permissions:
 
-| Permission                  | Allows                                                                                    |
-| --------------------------- | ----------------------------------------------------------------------------------------- |
-| Manage users                | Create, edit, ban and delete accounts (not administrators').                              |
-| Manage settings             | Change Storyrr's settings and service connections.                                       |
-| Manage requests             | Approve, deny, retry and delete requests. Their own requests are approved automatically. |
-| Advanced requests           | Choose the folder and quality profile when requesting.                                   |
-| View requests               | See everyone's requests, not only their own.                                              |
-| Request audiobooks / eBooks | Send requests of that format.                                                             |
-| Auto-approve audiobooks / eBooks | Their requests of that format skip approval.                                         |
-| Manage issues               | See, resolve and reopen everyone's issues.                                                |
-| Report issues               | Report problems on titles they have.                                                      |
-| Manage blocklist            | Block and unblock titles.                                                                 |
+| Permission                       | Allows                                                                                   |
+| -------------------------------- | ---------------------------------------------------------------------------------------- |
+| Manage users                     | Create, edit, ban and delete accounts (not administrators').                             |
+| Manage settings                  | Change Storyrr's settings and service connections.                                       |
+| Manage requests                  | Approve, deny, retry and delete requests. Their own requests are approved automatically. |
+| Advanced requests                | Choose the folder and quality profile when requesting.                                   |
+| View requests                    | See everyone's requests, not only their own.                                             |
+| Request audiobooks / eBooks      | Send requests of that format.                                                            |
+| Auto-approve audiobooks / eBooks | Their requests of that format skip approval.                                             |
+| Manage issues                    | See, resolve and reopen everyone's issues.                                               |
+| Report issues                    | Report problems on titles they have.                                                     |
+| Manage blocklist                 | Block and unblock titles.                                                                |
 
 Users without their own list get the **default permissions** from **Settings → Users** (out of the box: request both formats and report issues).
 

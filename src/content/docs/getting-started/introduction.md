@@ -9,12 +9,12 @@ Storyrr is a self-hosted request manager for **audiobooks and eBooks**, includin
 
 Storyrr doesn't download anything itself. It sits between your users and the tools you already run:
 
-| Role                | Service                                          | What Storyrr does with it                                                    |
-| ------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------- |
-| Fetching            | [Chaptarr](https://github.com/Chaptarr/chaptarr) | Hands it each approved request, in the folder and quality profile you chose. |
-| Audiobook catalog   | Audible                                          | Search, details, series, bestsellers. No account or key needed.              |
-| Book catalog        | [Hardcover](https://hardcover.app/)              | Search for books, manga and comics, genres, upcoming titles. Free token.     |
-| What you already have | Audiobookshelf, Kavita, Komga, Jellyfin        | Reads their libraries to show what's available, and lets users sign in.      |
+| Role                  | Service                                          | What Storyrr does with it                                                    |
+| --------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------- |
+| Fetching              | [Chaptarr](https://github.com/Chaptarr/chaptarr) | Hands it each approved request, in the folder and quality profile you chose. |
+| Audiobook catalog     | Audible                                          | Search, details, series, bestsellers. No account or key needed.              |
+| Book catalog          | [Hardcover](https://hardcover.app/)              | Search for books, manga and comics, genres, upcoming titles. Free token.     |
+| What you already have | Audiobookshelf, Kavita, Komga, Jellyfin          | Reads their libraries to show what's available, and lets users sign in.      |
 
 Only Chaptarr and a Hardcover token are needed to request books; the media servers are optional, and you can connect as many as you use.
 

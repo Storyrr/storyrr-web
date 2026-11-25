@@ -1,12 +1,18 @@
 {
   "name": "storyrr-web",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro sync && bun run format:check && bun run lint",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "lint": "oxlint --deny-warnings",
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.43.1",
@@ -15,5 +21,9 @@
     "astro": "^7.3.6",
     "sharp": "^0.35.3"
   },
-  "private": true
+  "devDependencies": {
+    "oxfmt": "0.80.0",
+    "oxlint": "1.95.0",
+    "oxlint-tsgolint": "7.0.2008"
+  }
 }
