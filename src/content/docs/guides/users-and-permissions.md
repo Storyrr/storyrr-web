@@ -34,11 +34,11 @@ User managers who aren't administrators can only grant permissions they hold the
 
 **Users → Add a user** sets a name, email and password. Each user changes their password, language and notifications in their own settings.
 
-When the [Email notification agent](../../guides/notifications/) is set up, the sign-in page also offers **Forgot password?**.
+When the [Email notification agent](/guides/notifications/) is set up, the sign-in page also offers **Forgot password?**.
 
 ## Sign in with a media server
 
-Users can sign in with their [Audiobookshelf](../../services/audiobookshelf/), [Kavita](../../services/kavita/), [Komga](../../services/komga/) or [Jellyfin](../../services/jellyfin/) account, once you turn it on in that server's settings:
+Users can sign in with their [Audiobookshelf](/services/audiobookshelf/), [Kavita](/services/kavita/), [Komga](/services/komga/) or [Jellyfin](/services/jellyfin/) account, once you turn it on in that server's settings:
 
 - **Import users** (Users page) creates Storyrr accounts linked to the media-server accounts you pick, with the default permissions.
 - Existing users link their media-server account in their settings (**Linked accounts**). The password is checked once and never stored.

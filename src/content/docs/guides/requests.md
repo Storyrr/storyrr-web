@@ -37,7 +37,7 @@ Requests skip approval for users with **Auto-approve audiobooks** or **Auto-appr
 
 ## Languages
 
-Titles in a language your Chaptarr metadata profile doesn't accept can't be requested. See [Chaptarr › Languages](../../services/chaptarr/#languages).
+Titles in a language your Chaptarr metadata profile doesn't accept can't be requested. See [Chaptarr › Languages](/services/chaptarr/#languages).
 
 ## Blocklist
 

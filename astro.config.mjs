@@ -2,13 +2,15 @@
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
 
+const base = "/storyrr-web";
+
 // https://astro.build/config
 export default defineConfig({
   // GitHub Pages project site: https://storyrr.github.io/storyrr-web/. With a custom
-  // domain, set `site` to it, remove `base` and add its name in public/CNAME. Links
-  // between pages are relative, so they work either way.
+  // domain, set `site` to it, `base` to "/" and add its name in public/CNAME. Links
+  // between pages are written from the root; src/middleware.ts adds the base.
   site: "https://storyrr.github.io",
-  base: "/storyrr-web",
+  base,
   integrations: [
     starlight({
       title: "Storyrr",

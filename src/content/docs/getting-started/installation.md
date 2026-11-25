@@ -25,7 +25,7 @@ mkdir data && sudo chown 1000:1000 data
 docker compose up -d
 ```
 
-Then open `http://<server-ip>:3000`. The first visit runs the [setup wizard](../../getting-started/first-setup/).
+Then open `http://<server-ip>:3000`. The first visit runs the [setup wizard](/getting-started/first-setup/).
 
 :::tip[Same network as your other services]
 Put Storyrr on the same Docker network as Chaptarr and your media servers: it can then reach them by container name and **internal** port (for example `http://audiobookshelf:80`), whatever ports you publish on the host.
@@ -46,7 +46,7 @@ Put Storyrr on the same Docker network as Chaptarr and your media servers: it ca
 | `storyrr.db`  | The SQLite database: accounts, requests, settings. Migrated automatically at startup. |
 | `auth-secret` | Generated on first start. Signs sessions and encrypts the service keys you save. |
 
-Keep both together: see [Backups and updates](../../configuration/backups-and-updates/).
+Keep both together: see [Backups and updates](/configuration/backups-and-updates/).
 
 ## Health check
 

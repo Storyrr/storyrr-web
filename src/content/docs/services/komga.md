@@ -20,4 +20,4 @@ Komga series carry no shared identifier: titles are matched by series title (and
 
 ## Sign-in and users
 
-Komga accounts can sign in to Storyrr (with their email and password) and be imported, like [Audiobookshelf's](../../services/audiobookshelf/#sign-in-and-users).
+Komga accounts can sign in to Storyrr (with their email and password) and be imported, like [Audiobookshelf's](/services/audiobookshelf/#sign-in-and-users).

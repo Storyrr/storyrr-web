@@ -31,7 +31,7 @@ So that requests turn available as soon as the book is imported, add Storyrr's w
 1. In Storyrr, **Settings → Services**, copy the **Webhook URL** under the Chaptarr card.
 2. In Chaptarr, **Settings → Connect → + → Webhook**, paste it as the URL, method **POST**, and turn on the import notification.
 
-The URL contains a secret: keep it private. It uses the [application URL](../../configuration/reverse-proxy/), which Chaptarr must be able to reach.
+The URL contains a secret: keep it private. It uses the [application URL](/configuration/reverse-proxy/), which Chaptarr must be able to reach.
 
 Without the webhook, Storyrr still notices imports through its library sync, every 15 minutes.
 

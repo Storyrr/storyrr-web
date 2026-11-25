@@ -14,7 +14,7 @@ In **Settings → Kavita**:
 
 Press **Test** and **Save**, then choose the **libraries** that count and press **Sync libraries**.
 
-Kavita's libraries usually match your Chaptarr eBook folders one for one (Books, Manga, Comics): see [Chaptarr](../../services/chaptarr/#default-folder-and-profiles).
+Kavita's libraries usually match your Chaptarr eBook folders one for one (Books, Manga, Comics): see [Chaptarr](/services/chaptarr/#default-folder-and-profiles).
 
 ## Matching
 
@@ -22,4 +22,4 @@ Kavita keeps no shared identifier, so titles are matched by normalized title, as
 
 ## Sign-in and users
 
-Kavita accounts can sign in to Storyrr and be imported, like [Audiobookshelf's](../../services/audiobookshelf/#sign-in-and-users).
+Kavita accounts can sign in to Storyrr and be imported, like [Audiobookshelf's](/services/audiobookshelf/#sign-in-and-users).

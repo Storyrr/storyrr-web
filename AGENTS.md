@@ -18,7 +18,7 @@ When starting the dev server from an agent, use background mode: `astro dev --ba
 - **The app is the source of truth.** Name settings, buttons and statuses exactly as the app's English UI does (`messages/en.json` in the app repo), and check behavior in the app's code or `docs/SPEC.md` before describing it. When the app changes, update the matching page.
 - Write for self-hosters: what to do, where to click, what to paste. Short sentences, second person, no marketing superlatives.
 - Front matter values containing `: ` must be quoted.
-- **Links between pages are relative** (`../services/chaptarr/`, and `getting-started/introduction/` from the landing page): the site is served under `/storyrr-web/` on GitHub Pages and Astro doesn't add that base to Markdown links. A relative link keeps working once the site moves to its own domain.
+- **Links between pages are written from the root** (`/services/chaptarr/`), without the base path: the site is served under `/storyrr-web/` on GitHub Pages, and `src/middleware.ts` adds that base to every page's links (Astro doesn't add it to Markdown links). Don't use relative links: they break when a URL is opened without its trailing slash.
 - The repository is public: no personal data, hostnames, IP addresses (other than private-range examples like `192.168.1.10`) or secrets in pages or screenshots.
 
 ## Brand

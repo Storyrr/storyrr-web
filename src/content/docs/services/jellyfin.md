@@ -20,4 +20,4 @@ Jellyfin keeps no Audible identifier: titles are matched by title, as "probably 
 
 ## Sign-in and users
 
-Jellyfin accounts can sign in to Storyrr and be imported, like [Audiobookshelf's](../../services/audiobookshelf/#sign-in-and-users). Storyrr checks the password with Jellyfin and keeps no Jellyfin session.
+Jellyfin accounts can sign in to Storyrr and be imported, like [Audiobookshelf's](/services/audiobookshelf/#sign-in-and-users). Storyrr checks the password with Jellyfin and keeps no Jellyfin session.

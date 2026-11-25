@@ -29,5 +29,5 @@ A request that Chaptarr refuses goes to **Failed** with Chaptarr's reason and ca
 
 ## Next steps
 
-- [Install Storyrr](../../getting-started/installation/) with Docker.
-- [Run the setup wizard](../../getting-started/first-setup/) and connect your services.
+- [Install Storyrr](/getting-started/installation/) with Docker.
+- [Run the setup wizard](/getting-started/first-setup/) and connect your services.

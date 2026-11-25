@@ -28,4 +28,4 @@ docker compose up -d
 
 Database migrations run automatically at startup. Pages that were open on the old version offer to reload.
 
-Before 1.0, a minor version (0.**X**.0) can contain breaking changes: read the [release notes](https://github.com/Storyrr/storyrr/releases) before updating, and use an `X.Y` or `X.Y.Z` [image tag](../../getting-started/installation/#image-tags) instead of `latest` if you'd rather choose when to move.
+Before 1.0, a minor version (0.**X**.0) can contain breaking changes: read the [release notes](https://github.com/Storyrr/storyrr/releases) before updating, and use an `X.Y` or `X.Y.Z` [image tag](/getting-started/installation/#image-tags) instead of `latest` if you'd rather choose when to move.

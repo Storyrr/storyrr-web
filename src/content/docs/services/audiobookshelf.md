@@ -27,4 +27,4 @@ Set your library's metadata provider to Audible in Audiobookshelf: items then ca
 - **Sign in with Audiobookshelf:** turn it on under Sign-in, and users can use their Audiobookshelf account on Storyrr's sign-in page. Choose whether unknown accounts get a Storyrr account (off by default: only imported or linked accounts sign in).
 - **Import users:** **Users → Import users** creates linked Storyrr accounts for the Audiobookshelf users you select.
 
-See [Users and permissions](../../guides/users-and-permissions/#sign-in-with-a-media-server).
+See [Users and permissions](/guides/users-and-permissions/#sign-in-with-a-media-server).
