@@ -38,6 +38,8 @@ Someone who can change the settings reaches the saved API keys, the email server
 
 **Users → Add a user** sets a name, email and password. Each user changes their password, language and notifications in their own settings.
 
+Deleting an account keeps its requests: they stay in the list with their history, shown as a deleted user's, so the people following them still get their news. Its issues are deleted with it.
+
 When the [Email notification agent](/guides/notifications/) is set up, the sign-in page also offers **Forgot password?**.
 
 ## Sign in with a media server

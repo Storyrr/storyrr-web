@@ -16,6 +16,16 @@ Storyrr reads the request's original address from the proxy's headers:
 
 Sign-in and other changes check that the request comes from the page's own address, so a proxy that rewrites `Host` without setting `X-Forwarded-Host` makes them fail.
 
+## Tell Storyrr it is behind a proxy
+
+Storyrr limits sign-in attempts per visitor address. By default it uses the address of the connection itself, which a visitor can't forge. Behind a reverse proxy or a tunnel, every visitor then seems to come from the proxy and shares one limit.
+
+If Storyrr is **only** reached through your proxy or tunnel, turn on **Settings → Network → Trust the proxy's address header**: visitors are told apart by the address the proxy reports in `X-Forwarded-For`.
+
+Leave it off if Storyrr is also opened directly (for example by its local network address): anyone reaching it directly could send that header themselves and get around the limit.
+
+## Examples
+
 ### Cloudflare Tunnel
 
 Point the tunnel's public hostname at Storyrr's local address (for example `http://storyrr:6066`). Cloudflare sends the right headers: nothing else to do.
