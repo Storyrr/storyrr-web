@@ -30,6 +30,10 @@ Users without their own list get the **default permissions** from **Settings →
 
 User managers who aren't administrators can only grant permissions they hold themselves, and can't change accounts that hold a permission they lack.
 
+:::caution[Manage settings is as good as Administrator]
+Someone who can change the settings reaches the saved API keys, the email server password resets go through, and media-server sign-in. Give this permission only to people you would make administrators.
+:::
+
 ## Creating accounts
 
 **Users → Add a user** sets a name, email and password. Each user changes their password, language and notifications in their own settings.

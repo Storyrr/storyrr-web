@@ -27,6 +27,8 @@ Only Chaptarr and a Hardcover token are needed to request books; the media serve
 
 A request that Chaptarr refuses goes to **Failed** with Chaptarr's reason and can be retried.
 
+Storyrr is open source, under the [MIT license](https://github.com/Storyrr/storyrr/blob/main/LICENSE).
+
 ## Next steps
 
 - [Install Storyrr](/getting-started/installation/) with Docker.

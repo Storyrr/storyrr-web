@@ -25,6 +25,10 @@ If someone already requested the same title, requesting it again joins their req
 
 Each request keeps its history: who changed it, when, and why.
 
+If Chaptarr is down or restarting when a request is approved, the request stays **Approved** and is sent a few minutes later.
+
+A request turns **Available** when Chaptarr reports the book's file, or when a media server holds it. A match by title alone doesn't count if that title was already in your library when the request was sent: it is another book with the same title.
+
 ## Approving
 
 Users with **Manage requests** see pending requests first on the Requests page. They can **approve** them (changing the folder or quality profile first if needed), **deny** them with an optional reason, approve several at once, and delete any request.

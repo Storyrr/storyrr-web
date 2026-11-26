@@ -25,6 +25,8 @@ mkdir data && sudo chown 1000:1000 data
 docker compose up -d
 ```
 
+If the folder isn't writable, Storyrr stops at startup with a message saying so (`docker compose logs storyrr`).
+
 Then open `http://<server-ip>:6066`. The first visit runs the [setup wizard](/getting-started/first-setup/).
 
 :::tip[Same network as your other services]
