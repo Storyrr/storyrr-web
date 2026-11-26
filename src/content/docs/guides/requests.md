@@ -23,6 +23,8 @@ If someone already requested the same title, requesting it again joins their req
 | **Cancelled**        | Deleted while pending.                                                    |
 | **Failed**           | Chaptarr refused it; the reason is shown. Request managers can **Retry**. |
 
+While Chaptarr downloads a request, its progress shows as a bar with a percentage on the Requests page, on Discover and on the title's page.
+
 Each request keeps its history: who changed it, when, and why.
 
 If Chaptarr is down or restarting when a request is approved, the request stays **Approved** and is sent a few minutes later.
