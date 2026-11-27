@@ -35,6 +35,8 @@ export default defineConfig({
       ],
       social: [{ icon: "github", label: "GitHub", href: "https://github.com/Storyrr/storyrr" }],
       editLink: { baseUrl: "https://github.com/Storyrr/storyrr.github.io/edit/main/" },
+      // Adds the license line under every page.
+      components: { Footer: "./src/components/Footer.astro" },
       customCss: [
         "@fontsource-variable/geist",
         "@fontsource-variable/space-grotesk",

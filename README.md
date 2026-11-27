@@ -24,3 +24,7 @@ Pages are Markdown files in `src/content/docs/`; the sidebar is set in `astro.co
 Every push to `main` builds the site and publishes it on GitHub Pages (`.github/workflows/deploy.yml`). In the repository settings, **Pages → Source** must be **GitHub Actions**.
 
 To move to a custom domain: set `site` to it in `astro.config.mjs`, add the domain in `public/CNAME` and in **Pages → Custom domain**.
+
+## License
+
+[MIT](LICENSE), like Storyrr.

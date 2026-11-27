@@ -1,0 +1,24 @@
+---
+import Default from "@astrojs/starlight/components/Footer.astro";
+---
+
+<Default><slot /></Default>
+<p class="license">
+  Storyrr is open source, released under the{" "}
+  <a href="https://github.com/Storyrr/storyrr/blob/main/LICENSE">MIT license</a>.
+</p>
+
+<style>
+  .license {
+    margin-top: 2rem;
+    border-top: 1px solid var(--sl-color-hairline);
+    padding-top: 1rem;
+    color: var(--sl-color-gray-3);
+    font-size: var(--sl-text-xs);
+    text-align: center;
+  }
+
+  .license a {
+    color: var(--sl-color-text-accent);
+  }
+</style>
